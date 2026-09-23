@@ -41,6 +41,7 @@ public class TaskController {
         return "redirect:/tasks";
     }
 
+
     @GetMapping("/delete/{id}")
     public String deleteTask(@PathVariable("id") String id) {
         taskService.deleteTask(id);
